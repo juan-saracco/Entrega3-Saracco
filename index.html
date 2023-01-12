@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de notas</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <section>
+        <div class="titleContainer">
+            <h1 id="tituloDinamico"></h1>
+            <h2 id="h2dinamico"></h2>
+        </div>
+    </section>
+    <section>
+        <div id="notas">
+            <div class="nombreAlumno grilla">
+                <span id="nombreDinamico"></span>
+            </div>
+            <div class="primerNota grilla">
+                <span>Primer trimestre</span>
+            </div>
+            <div class="segundaNota grilla">
+                <span>Segundo trimestre</span>
+            </div>
+            <div class="tercerNota grilla">
+                <span> Tercer trimestre</span>
+            </div>
+            <div class="grilla">
+                <span>Promedio</span>
+            </div>
+            <div class="nota grilla">
+                <span>Nota</span>
+            </div>
+            <div class="grilla">
+                <span class="valorPrimerNota"> </span>
+            </div>
+            <div class="grilla"><span class="valorSegundaNota"> </span>
+            </div>
+            <div class="grilla"><span class="valorTercerNota"> </span>
+            </div>
+            <div class="grilla">
+                <span class="promedio"> </span>
+            </div>
+        </div>
+    </section>
+    <section id="section3Container">
+        <div class="div2">
+            <input type="text" class="input" id="inputDinamico" placeholder="Ingrese su nombre y apellido">
+            <input type="button" value="Enviar" class="input" id="enviarNombre">
+            <a href="./inicio.html"><input type="button" value="Volver a inicio" class="input" id="recuperar"></a>
+        </div>
+        <div class="cargarNotasContainer">
+            <input type="number" placeholder="Ingresa tus notas de a una a la vez" class="input enviarNotas" id="cargarNota">
+            <input type="button" value="Enviar" class="input" id="enviarNota">
+            <input type="button" value="calcular" class="input" id="calcular">
+            <input type="button" value="borrar" class="input" id="vaciarArr">
+        </div>
+        
+    </section>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html> 
